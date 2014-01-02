@@ -1,0 +1,15 @@
+/* Nicht entfernen - wird zum Initialiseren der padding- und margin-Werte benötigt */
+.qpCoverflow, .qpCoverflow *{
+	margin: 0;
+	padding: 0;
+}
+
+/* Wrapper für Coverflow (DIV) */
+.qpCoverflow{
+	margin: auto;
+	background: #111;
+}
+/* Coverflow-Element (UL) */
+.qpCoverflowList{}
+/* Coverflow-Element (LI) */
+.qpCanvasListItem{}

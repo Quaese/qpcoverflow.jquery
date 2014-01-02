@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="description" content="www.quaese.de" />
+
+<title>qpcoverflow.jquery</title>
+
+<link rel="stylesheet" href="css/qp_coverflow.css" />
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/qp_coverflow.jquery.js"></script>
+
+<script type="text/javascript">
+$(function(){
+    $('#coverflow').qpCoverflow({
+        images: [
+            'http://canvas.quaese.de/bilder/content/canvas_startbild_1.jpg', 'http://www.zeichentrickserien.de/isnogud2.jpg', 'http://canvas.quaese.de/bilder/content/canvas_startbild_1.jpg', 'http://www.zeichentrickserien.de/isnogud2.jpg',
+            'http://canvas.quaese.de/bilder/content/canvas_startbild_1.jpg', 'http://www.zeichentrickserien.de/isnogud2.jpg', 'http://canvas.quaese.de/bilder/content/canvas_startbild_1.jpg', 'http://www.zeichentrickserien.de/isnogud2.jpg',
+            'http://canvas.quaese.de/bilder/content/canvas_startbild_1.jpg', 'http://www.zeichentrickserien.de/isnogud2.jpg', 'http://canvas.quaese.de/bilder/content/canvas_startbild_1.jpg', 'http://www.zeichentrickserien.de/isnogud2.jpg'
+        ]
+    });
+});
+</script>
+
+</head>
+<body>
+<div id="coverflow"></div>
+</body>
+</html>

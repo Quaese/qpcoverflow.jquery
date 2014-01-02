@@ -26,7 +26,7 @@ $(function() {
             animDelay: 20
         },
 
-        animStep: 3,
+        animStep: 4,
 
         opacity: {
             start: 0.8,
@@ -306,18 +306,18 @@ $(function() {
             canvasStack.imgWidth = image.width;
             canvasStack.imgHeight = image.height;
 
-            // Falls die Breite grösser als die des Canvas ist
-            if(canvasStack.imgWidth > self.canvasWidth){
-                factor = self.canvasWidth / canvasStack.imgWidth;
-                canvasStack.imgWidth = self.canvasWidth;
-                canvasStack.imgHeight = factor * canvasStack.imgHeight;
-            }
-
             // Falls die Höhe grösser als die Hälfte des Canvas ist
             if(canvasStack.imgHeight > self.canvasHeight/2){
                 factor = (self.canvasHeight/2) / canvasStack.imgHeight;
                 canvasStack.imgHeight = (self.canvasHeight/2);
                 canvasStack.imgWidth = factor * canvasStack.imgWidth;
+            }
+
+            // Falls die Breite grösser als die des Canvas ist
+            if(canvasStack.imgWidth > self.canvasWidth){
+                factor = self.canvasWidth / canvasStack.imgWidth;
+                canvasStack.imgWidth = self.canvasWidth;
+                canvasStack.imgHeight = factor * canvasStack.imgHeight;
             }
         },
 

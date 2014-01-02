@@ -6,6 +6,11 @@ A simple coverflow using jQuery and jQueryUI.
 
 Description ...
 
+### Additional Frameworks
+- first framework
+- next framework
+- ...
+
 ## Documentation
 
 **Methods**

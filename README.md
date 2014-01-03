@@ -29,51 +29,36 @@ Description ...
 
 
 
-	- *start* (integer, string):
+- __start__ (integer, string):
+Index des Bildes, das initial in der Mitte sein soll (auto = Anzahl Bilder/2)
+Default: 'auto'
 
-	Index des Bildes, das initial in der Mitte sein soll (auto = Anzahl Bilder/2)
+- __width__ (integer, string):
+Breite des Coverflows (z.B. 400, '90%', 'auto')
+Default: 'auto'
 
-	Default: 'auto'
+- __height__ (integer):
+Höhe des Coverflows (>=50)
+Default: 300
 
-    - *width* (integer, string):
+-items (integer):
+Anzahl ungekippter Bilder im Coverflow (von 2 .. 10)
+Default: 3
 
-    Breite des Coverflows (z.B. 400, '90%', 'auto')
+- __itemMargin__ (integer):
+Abstand zwischen den Bildern (von 0 .. 20)
+Default: 5
 
-    Default: 'auto'
+- __angle__ (integer):
+Kipp-Winkel (von 0 .. 75 Grad)
+Default: 60
 
-    - *height* (integer):
+- __grid__ (integer):
+Schrittweite der Skew-Funktion (Kipp-Funktion) (von 1 .. 20)
+Default: 5
 
-    Höhe des Coverflows (>=50)
-
-    Default: 300
-
-    -items (integer):
-
-    Anzahl ungekippter Bilder im Coverflow (von 2 .. 10)
-
-    Default: 3
-
-    - *itemMargin* (integer):
-
-    Abstand zwischen den Bildern (von 0 .. 20)
-
-    Default: 5
-
-    - *angle* (integer):
-
-    Kipp-Winkel (von 0 .. 75 Grad)
-
-    Default: 60
-
-    - *grid* (integer):
-
-    Schrittweite der Skew-Funktion (Kipp-Funktion) (von 1 .. 20)
-
-    Default: 5
-
-    - *images* (array):
-
-    Array mit Bildquellen
+- __images__ (array):
+Array mit Bildquellen
 
 
 ## Examples

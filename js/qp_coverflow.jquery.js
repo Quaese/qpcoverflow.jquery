@@ -1,10 +1,3 @@
-/* ****************************************************************************************** *
- * Das Script kann frei verwendet werden, dieser Kommentar sowie die Nennung des Nicks
- * und der URL müssen jedoch erhalten bleiben.
- *
- *                                                           (c) Quaese (www.quaese.de), 2014
- * ****************************************************************************************** */
-
 if(jQuery){
     (function($){
 
@@ -52,9 +45,12 @@ if(jQuery){
                     angle: 60,          // (integer) Kipp-Winkel (von 0 .. 75 Grad)
                     grid: 5,            // (integer) Schrittweite der Skew-Funktion (Kipp-Funktion) (von 1 .. 20)
                     images: [
-                        'http://canvas.quaese.de/bilder/content/canvas_startbild_1.jpg', 'http://www.zeichentrickserien.de/isnogud2.jpg', 'http://canvas.quaese.de/bilder/content/stack.gif', 'http://canvas.quaese.de/bilder/content/drawimagescale.jpg', 'http://canvas.quaese.de/bilder/content/imagedata.gif',
-                        'http://canvas.quaese.de/bilder/content/canvas_startbild_1.jpg', 'http://www.zeichentrickserien.de/isnogud2.jpg', 'http://canvas.quaese.de/bilder/content/stack.gif', 'http://canvas.quaese.de/bilder/content/drawimagescale.jpg', 'http://canvas.quaese.de/bilder/content/imagedata.gif',
-                        'http://canvas.quaese.de/bilder/content/canvas_startbild_1.jpg', 'http://www.zeichentrickserien.de/isnogud2.jpg', 'http://canvas.quaese.de/bilder/content/stack.gif', 'http://canvas.quaese.de/bilder/content/drawimagescale.jpg', 'http://canvas.quaese.de/bilder/content/imagedata.gif'
+                    //     'http://canvas.quaese.de/bilder/content/canvas_startbild_1.jpg', 'http://www.zeichentrickserien.de/isnogud2.jpg', 'http://canvas.quaese.de/bilder/content/stack.gif', 'http://canvas.quaese.de/bilder/content/drawimagescale.jpg', 'http://canvas.quaese.de/bilder/content/imagedata.gif',
+                    //     'http://canvas.quaese.de/bilder/content/canvas_startbild_1.jpg', 'http://www.zeichentrickserien.de/isnogud2.jpg', 'http://canvas.quaese.de/bilder/content/stack.gif', 'http://canvas.quaese.de/bilder/content/drawimagescale.jpg', 'http://canvas.quaese.de/bilder/content/imagedata.gif',
+                    //     'http://canvas.quaese.de/bilder/content/canvas_startbild_1.jpg', 'http://www.zeichentrickserien.de/isnogud2.jpg', 'http://canvas.quaese.de/bilder/content/stack.gif', 'http://canvas.quaese.de/bilder/content/drawimagescale.jpg', 'http://canvas.quaese.de/bilder/content/imagedata.gif'
+                        'http://canvas.quaese.de/bilder/content/canvas_startbild_1.jpg', 'http://canvas.quaese.de/bilder/content/7-segment-anzeige.gif', 'http://canvas.quaese.de/bilder/content/stack.gif', 'http://canvas.quaese.de/bilder/content/drawimagescale.jpg', 'http://canvas.quaese.de/bilder/content/imagedata.gif',
+                        'http://canvas.quaese.de/bilder/content/canvas_startbild_1.jpg', 'http://canvas.quaese.de/bilder/content/7-segment-anzeige.gif', 'http://canvas.quaese.de/bilder/content/stack.gif', 'http://canvas.quaese.de/bilder/content/drawimagescale.jpg', 'http://canvas.quaese.de/bilder/content/imagedata.gif',
+                        'http://canvas.quaese.de/bilder/content/canvas_startbild_1.jpg', 'http://canvas.quaese.de/bilder/content/7-segment-anzeige.gif', 'http://canvas.quaese.de/bilder/content/stack.gif', 'http://canvas.quaese.de/bilder/content/drawimagescale.jpg', 'http://canvas.quaese.de/bilder/content/imagedata.gif'
                     ]
                 },
 
@@ -112,7 +108,7 @@ if(jQuery){
                     // Image-Stack erstellen
                     for(var i=0; i<o.images.length; i++){
                         self.imageStack[i] = $('<img />');
-                        self.imageStack[i][0].src = o.images[i] + "?" + new Date().getTime();
+                        self.imageStack[i][0].src = o.images[i];// + "?" + new Date().getTime();
 
                         // auf load Event des Bildes reagieren
                         self.imageStack[i].on('load', $.proxy(self._onload, self, self.imageStack[i], i));

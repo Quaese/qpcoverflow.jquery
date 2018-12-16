@@ -4,7 +4,7 @@ A simple coverflow using jQuery and jQueryUI.
 
 ## Live Preview
 
-(qpcoverflow.jquery)[http://quaese.github.io/qpcoverflow.jquery/]
+[qpcoverflow.jquery](http://quaese.github.io/qpcoverflow.jquery/)
 
 ### Additional Frameworks
 - first framework
